@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 100 100"
+>
+
+  <!-- Background -->
+  <rect width="100" height="100" rx="14" fill="#121210" />
+
+  <!-- Nodes -->
+  <circle cx="34" cy="24" r="7.5">
+    <animate
+      attributeName="fill"
+      dur="30s"
+      repeatCount="indefinite"
+      values="#FFFF66;#66D9EF;#40A187;#A6E22E;#FFFF66"
+    />
+  </circle>
+
+  <circle cx="34" cy="76" r="7.5">
+    <animate
+      attributeName="fill"
+      dur="30s"
+      repeatCount="indefinite"
+      values="#FFFF66;#66D9EF;#40A187;#A6E22E;#FFFF66"
+    />
+  </circle>
+
+  <circle cx="70" cy="46" r="7.5">
+    <animate
+      attributeName="fill"
+      dur="30s"
+      repeatCount="indefinite"
+      values="#FFFF66;#66D9EF;#40A187;#A6E22E;#FFFF66"
+    />
+  </circle>
+
+  <!-- Branch path -->
+  <path
+    d="M34 32 V68
+       C34 72 38 76 42 76
+       H54
+       C58 76 64 70 64 66
+       V54"
+    fill="none"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <animate
+      attributeName="stroke"
+      dur="30s"
+      repeatCount="indefinite"
+      values="#FFFF66;#66D9EF;#40A187;#A6E22E;#FFFF66"
+    />
+  </path>
+
+</svg>

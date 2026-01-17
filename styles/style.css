@@ -1,0 +1,533 @@
+@import url('fonts.css');
+
+html {
+    width: 100%;
+}
+
+body {
+  font-family: 'Geist Sans', sans-serif;
+  background: #121210;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    padding: 2px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #323232;
+    background: linear-gradient(180deg, #000000, #181818);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.header__inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 0;
+    margin: 0 auto;
+    transition: all 0.2s linear;
+}   
+
+.header__inner-left {
+    display: flex;
+    align-items: center;
+}
+
+.header__title { 
+    margin: 0;
+    font-size: 24px;
+    background: -webkit-linear-gradient(280deg, #ffffff, #4d4d4d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 425px) {
+    .header__title {
+        margin: 0;
+    }
+}
+
+.header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.header__nav.active {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.header__link {
+    color: #8a8a8a;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header__link:hover {
+    color: #fff
+}
+
+.header__auth {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    padding: 20px 0;
+}
+
+.header__button {
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Geist Sans", sans-serif;
+    border-radius: 0.5rem;
+    border: 1px solid #525252;
+    padding: 10px 20px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.header__button:hover {
+    background-color: #262626;
+    color: #fff;
+    border: 1px solid #a4a4a4;
+}
+
+.header__button--sign-in {
+    background-color: #008b70;
+}
+
+.mobile-menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 20px;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    top: 35rem; /*return to 5rem */
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 90px 0;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+
+.container__title {
+    font-size: 55px;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+.container__description {
+    font-size: 18px;
+    font-family: "Geist Sans", sans-serif;
+    color: #bbb;
+    margin: 20px 0;
+}
+
+.container__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    width: auto;
+}
+
+.container__button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    font-family: "Geist Sans", sans-serif;
+    font-size: 16px;
+    border: 1px solid transparent;
+    transition: all 0.2s linear;
+    border-radius: 8px;
+    color: #222;
+}
+
+.container__button:hover {
+    background-color: #262626;
+    border: 1px solid #d7d7d7;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* View Docs Button */
+.container__button.container__button--view-docs {
+    background: transparent;
+    color: white;
+    border: 1px solid transparent;
+}
+
+button.container__button--view-docs::before,
+button.container__button--view-docs::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #3f3f3f;
+}
+
+button.container__button--view-docs span::before,
+button.container__button--view-docs span::after {
+    content: "";
+    width: 2px;
+    height: 0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #a4a4a4;
+}
+
+button.container__button--view-docs:hover::before,
+button.container__button--view-docs:hover::after {
+    width: 100%;
+}
+
+button.container__button--view-docs:hover span::before,
+button.container__button--view-docs:hover span::after {
+    height: 100%;
+}
+
+button.container__button--view-docs::after {
+    right: 0;
+    bottom: 0;
+    transition-duration: 0.4s;
+}
+
+button.container__button--view-docs span::after {
+    right: 0;
+    bottom: 0;
+    transition-duration: 0.4s;
+}
+
+button.container__button--view-docs::before {
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+}
+
+button.container__button--view-docs span::before {
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+}
+
+button.container__button--view-docs {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0;
+    background: #1a2929;
+    font-family: "Geist Sans", sans-serif;
+}
+
+/* Code Container */
+.code-container {
+    background: radial-gradient(#444444, #000000);
+    border: 1px solid #282828;
+    border-radius: 10px;
+    padding: 25px 0 0 0;
+    width: 100%   ;
+    max-width: 375px;
+    margin: 120px auto 0 auto;
+}
+
+@media (min-width: 500px) {
+    .code-container {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1050px) {
+    .code-container {
+        max-width: 960px;
+    }
+}
+
+.code-container__tabs {
+    display: flex;
+    justify-content: start;
+    border-radius: 5px;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding: 0 10px;
+}
+
+.code-container__tab {
+    background-color: #121212;
+    padding: 10px 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 1px solid #323232;
+    color: #4d4d4d;
+    cursor:pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.code-container__tab--active {
+    color: #d2d2d2;
+    background: radial-gradient(circle, #2f2f2f, #121212);
+}
+
+.code-container__icon {
+    font-size: 20px;
+    filter: grayscale (100%);
+}
+
+.code-container__content {
+    position: relative;
+    background: linear-gradient(180deg, #191919, #000000);
+    border-radius: 10px;
+    padding: 20px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.code-container__code {
+    display: none;
+    /* background-color: transparent !important; */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.code-container__code--active {
+    display: block;
+}
+
+pre[class*="language-"] {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.code-container__content pre[class*="language-"] {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+pre[class*="language-"].line-numbers {
+    position: relative;
+    padding: 3.8em;
+    counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+    position: relative;
+    white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em; /*match to padding above for alignment*/
+    width: 3em; /* add 1em each for four digits plus*/
+    letter-spacing: -1px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.line-numbers-rows > span {
+    display: block;
+    counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+    content: counter(linenumber);
+    color: #4f4f4f;
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+}
+
+@media (min-width: 500px) {
+    .code-container-bg-blur {
+    width: 110vw;
+
+    }
+
+    .header__inner {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        /*gap: 2rem;*/
+        padding: 10px;
+    }
+}
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #FDFAF4;  /* Light cream - main text */
+  background: #1a1612;  /* Very dark brown - darker than #3D3831 */
+  text-shadow: none;
+  font-family: 'Inconsolata', 'Monaco', 'Menlo', monospace;
+  letter-spacing: 0.3px;
+  word-spacing: 1px;
+}
+
+.code-container-bg-blur {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 130vw;
+    height: 1000px;
+    background: radial-gradient(circle, rgba(46, 46, 46, 0.9), rgba(0, 0, 0, 0.2));
+    z-index: -2;
+}
+
+/* Active line */
+pre[class*="language-"] {
+  box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+pre[class*="language-"] {
+  color: #FFFFFF;  /* Pure white - main text */
+  background: #0d0b09;  /* Very dark - almost black */
+  text-shadow: none;
+  font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+}
+
+/* Selection */
+code[class*="language-"]::-moz-selection,
+pre[class*="language-"]::-moz-selection {
+  background: #3D3831;  /* Dark brown selection */
+}
+
+code[class*="language-"]::selection,
+pre[class*="language-"]::selection {
+  background: #3D3831;
+}
+
+/* Comments - cool gray from your site */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #A0B3C5;  /* Cool blue-gray from your background */
+  font-style: italic;
+}
+
+/* Comments - cool gray from your site */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #A0B3C5;  /* Cool blue-gray from your background */
+  font-style: italic;
+}
+
+/* Strings - BRIGHT GREEN (matches current teal brightness) */
+.token.string,
+.token.attr-value {
+  color: #00D4A8;  /* Bright green - same tone as old teal */
+}
+
+/* Keywords - DEEP MAGENTA */
+.token.keyword {
+  color: #D946EF;  /* Bright magenta - your purple icon color */
+}
+
+/* Operators - BRIGHT CYAN (matches magenta brightness) */
+.token.operator {
+  color: #46D9EF;  /* Bright cyan - matched to magenta tone */
+}
+
+/* Functions - WARM ORANGE-GOLD */
+.token.function {
+  color: #FFB347;  /* Warm tangerine - complements your gold */
+  font-style: italic;
+}
+
+/* Numbers - BRIGHT SKY BLUE */
+.token.number {
+  color: #5FC3E4;  /* Sky blue - lighter than your teal */
+}
+
+/* Booleans and constants - YOUR MAGENTA/PURPLE */
+.token.boolean,
+.token.null,
+.token.atom {
+  color: #A855F7;  /* Bright purple - from your icon */
+}
+
+/* Variables - BRIGHT MINT/TEAL */
+.token.variable {
+  color: #4DD4AC;  /* Mint teal - vibrant green-blue */
+}
+
+/* Properties - LIGHT BLUE-GRAY */
+.token.property {
+  color: #E8F4F8;  /* Very light blue - from your site bg */
+}
+
+/* Class names - PURE white */
+.token.class-name {
+  color: #FFFFFF;  /* Pure white - stands out */
+}
+
+/* Punctuation - MEDIUM GRAY */
+.token.punctuation {
+  color: #B8C5D0;  /* Cool gray - subtle */
+}
+
+/* Tags - BRIGHT GREEN (matches current teal brightness) */
+.token.tag {
+  color: #00D4A8;  /* Bright green - same tone as old teal */
+}
+
+/* Attributes - DEEP MAGENTA */
+.token.attr-name {
+  color: #D946EF;  /* Bright magenta */
+}
+
+/* Built-ins - BRIGHT GOLD */
+.token.builtin,
+.token.selector {
+  color: #F4C430;  /* Bright gold - warm accent */
+}
+
+/* Regex and important - ELECTRIC MAGENTA */
+.token.regex,
+.token.important {
+  color: #E879F9;  /* Hot pink-magenta - attention color */
+}
+
+/* Namespace */
+.token.namespace {
+  opacity: 0.7;
+}
