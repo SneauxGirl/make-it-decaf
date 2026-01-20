@@ -443,15 +443,6 @@ pre[class*="language-"]::selection {
   font-style: italic;
 }
 
-/* Comments - cool gray from your site */
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #A0B3C5;  /* Cool blue-gray from your background */
-  font-style: italic;
-}
-
 /* Strings - BRIGHT GREEN (matches current teal brightness) */
 .token.string,
 .token.attr-value {
