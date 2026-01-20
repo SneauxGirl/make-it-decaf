@@ -529,7 +529,7 @@ pre[class*="language-"]::selection {
 
 .open-source-section {
     text-align: center;
-    padding 50px 20px;
+    padding: 50px 20px;
     width: 100%;
     margin: 0 auto;
     z-index: 1;
