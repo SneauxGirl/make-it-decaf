@@ -6,7 +6,7 @@ html {
 
 body {
   font-family: 'Geist Sans', sans-serif;
-  background: #121210;
+  background: black; /*updated to true black for stronger site visuals*/
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -112,7 +112,7 @@ body {
 }
 
 .header__button--sign-in {
-    background-color: #008b70;
+    background-color: #00532a; /*adjusted to complement theme and gihub button*/
 }
 
 .mobile-menu-icon {
@@ -380,13 +380,13 @@ pre[class*="language-"].line-numbers > code {
 
     }
 
-.header__inner {
+    .header__inner { /*NTS: PART OF MEDIA QUERY - quit "fixing" the indent and moving it */
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        /*gap: 2rem;*/
+        /*gap: 2rem; part of original tutorial code*/
         padding: 10px;
     }
 }
@@ -583,4 +583,80 @@ pre[class*="language-"]::selection {
 .gitPulse img{
     width: 100%;
     max-width: 600px;
+    border-radius: 29px; /*rounded the corners to match the border within the graphic*/
+}
+
+/* GITPULSE BACKGROUND */
+.gitPulse__bg {
+    top: -200px;
+    left: 0;
+    margin: 140px 0 70px 0;
+    opacity: 0.15;
+    background-image: url("../images/circuits.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+
+/* FOOTER */
+.padding {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.footer__inner {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    margin-top: 5rem;
+}
+
+@media screen and (min-width:768px) {
+    .footer__inner {
+        margin-top: 1rem;
+        overflow-y: hidden;
+        height: 155px;
+        }
+    }
+
+.footer__inner span {
+    font-size: 15vw;
+    font-weight: bold;
+    letter-spacing: -0.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in, transform 0.5s ease-out;
+    background: linear-gradient(to right, #404040, #212121);
+    background-clip: text;
+    color: transparent;
+}
+
+.footer__inner span.animate {
+    opacity: 0.75;
+    transform: translateY(0);
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.75%;
+    }
+    100% {
+        transform: translateY(110vh);
+        opacity: 0;
+    }
 }
