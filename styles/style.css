@@ -316,7 +316,7 @@ button.container__button--view-docs {
 
 .code-container__code {
     display: none;
-    /* background-color: transparent !important; */
+    background-color: transparent !important;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
@@ -390,10 +390,11 @@ pre[class*="language-"].line-numbers > code {
         padding: 10px;
     }
 }
+/* TODO - revisit. bkg lightened using custom hex tool. recheck before final*/
 code[class*="language-"],
 pre[class*="language-"] {
   color: #FDFAF4;  /* Light cream - main text */
-  background: #1a1612;  /* Very dark brown - darker than #3D3831 */
+  background: #201C18;  /*#1a1612 Very dark brown - darker than #3D3831*/
   text-shadow: none;
   font-family: 'Inconsolata', 'Monaco', 'Menlo', monospace;
   letter-spacing: 0.3px;
