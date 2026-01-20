@@ -122,10 +122,10 @@ body {
     margin-right: 20px;
     color: #fff;
 }
-
+/*TODO set final styling - top isn't showing but pushing it down affects the entire page*/
 .container {
     position: relative;
-    top: 35rem; /*return to 5rem */
+    top: 5rem;
     text-align: center;
     width: 100%;
     max-width: 1200px;
@@ -380,7 +380,7 @@ pre[class*="language-"].line-numbers > code {
 
     }
 
-    .header__inner {
+.header__inner {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -422,7 +422,7 @@ pre[class*="language-"] {
   text-shadow: none;
   font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
 }
-
+/* THEME COLOR OVERRIDE - LIYUDEV BOLD */
 /* Selection */
 code[class*="language-"]::-moz-selection,
 pre[class*="language-"]::-moz-selection {
@@ -434,92 +434,153 @@ pre[class*="language-"]::selection {
   background: #3D3831;
 }
 
-/* Comments - cool gray from your site */
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #A0B3C5;  /* Cool blue-gray from your background */
+  color: #A0B3C5;  /* Cool blue-gray from LiyuDev background */
   font-style: italic;
 }
 
-/* Strings - BRIGHT GREEN (matches current teal brightness) */
 .token.string,
 .token.attr-value {
-  color: #00D4A8;  /* Bright green - same tone as old teal */
+  color: #00D4A8;  /* Bright green - same tone, brightness as prior teal */
 }
 
-/* Keywords - DEEP MAGENTA */
 .token.keyword {
-  color: #D946EF;  /* Bright magenta - your purple icon color */
+  color: #D946EF;  /* Bright magenta - drawn from icon color */
 }
 
-/* Operators - BRIGHT CYAN (matches magenta brightness) */
 .token.operator {
-  color: #46D9EF;  /* Bright cyan - matched to magenta tone */
+  color: #46D9EF;  /* Bright cyan - swapped with magenta, matched to magenta tone, brightness */
 }
 
-/* Functions - WARM ORANGE-GOLD */
 .token.function {
-  color: #FFB347;  /* Warm tangerine - complements your gold */
+  color: #FFB347;  /* Warm tangerine - complements gold from LiyuDev site */
   font-style: italic;
 }
 
-/* Numbers - BRIGHT SKY BLUE */
 .token.number {
-  color: #5FC3E4;  /* Sky blue - lighter than your teal */
+  color: #5FC3E4;  /* Sky blue - lighter than LiyuDev site teal */
 }
 
-/* Booleans and constants - YOUR MAGENTA/PURPLE */
 .token.boolean,
 .token.null,
 .token.atom {
-  color: #A855F7;  /* Bright purple - from your icon */
+  color: #A855F7;  /* Bright purple - derived from LiyuDev icon */
 }
 
-/* Variables - BRIGHT MINT/TEAL */
 .token.variable {
-  color: #4DD4AC;  /* Mint teal - vibrant green-blue */
+  color: #4DD4AC;  /* Mint teal - vibrant green-blue, contrast color*/
 }
 
-/* Properties - LIGHT BLUE-GRAY */
 .token.property {
-  color: #E8F4F8;  /* Very light blue - from your site bg */
+  color: #E8F4F8;  /* Very light blue - from LiyuDev bg */
 }
 
-/* Class names - PURE white */
 .token.class-name {
-  color: #FFFFFF;  /* Pure white - stands out */
+  color: #FFFFFF;  /* Pure white - stands out*/
 }
 
-/* Punctuation - MEDIUM GRAY */
 .token.punctuation {
   color: #B8C5D0;  /* Cool gray - subtle */
 }
 
-/* Tags - BRIGHT GREEN (matches current teal brightness) */
 .token.tag {
-  color: #00D4A8;  /* Bright green - same tone as old teal */
+  color: #00D4A8;  /* Bright green - same tone, brightness as prior teal; separated by type for future clarity*/
 }
 
-/* Attributes - DEEP MAGENTA */
 .token.attr-name {
   color: #D946EF;  /* Bright magenta */
 }
 
-/* Built-ins - BRIGHT GOLD */
 .token.builtin,
 .token.selector {
   color: #F4C430;  /* Bright gold - warm accent */
 }
 
-/* Regex and important - ELECTRIC MAGENTA */
 .token.regex,
 .token.important {
   color: #E879F9;  /* Hot pink-magenta - attention color */
 }
 
-/* Namespace */
 .token.namespace {
   opacity: 0.7;
+}
+
+.copy-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.25rem;
+    width: 2rem;
+    height: 2rem;
+    color: #3b3b3b;
+    z-index: 2;
+}
+
+.copy-icon:hover,
+.fa-copy:hover {
+    color: #828282;
+    cursor: pointer;
+}
+
+/*OPEN SOURCE SECITON  TODO: margins and positioning don't match visuals - recheck code if that doesn't resolve during tutorials*/
+
+.open-source-section {
+    text-align: center;
+    padding 50px 20px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #888888;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #bbbbbb;
+    margin-bottom: 30px;
+}
+
+.github-button {
+    background-color: #1a2929;
+    border: 2px solid #3f3f3f;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    display: inline-flex;
+    align-items: center;
+}
+
+.github-button i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.github-button:hover {
+    border-color: #a4a4a4;
+}
+
+.gitPulse {
+    position: relative;
+    padding: 100px 0;
+}
+
+.gitPulse img{
+    width: 100%;
+    max-width: 600px;
 }
