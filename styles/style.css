@@ -611,7 +611,7 @@ pre[class*="language-"]::selection {
     padding-top: 10rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /*TODO - fix position of letters*/
     overflow-y: hidden;
 }
 
