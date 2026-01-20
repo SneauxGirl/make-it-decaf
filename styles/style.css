@@ -607,11 +607,11 @@ pre[class*="language-"]::selection {
 }
 
 /* FOOTER */
-.padding {
+.footer {
     padding-top: 10rem;
     display: flex;
     justify-content: center;
-    align-items: center; /*TODO - fix position of letters*/
+    align-items: center;
     overflow-y: hidden;
 }
 
