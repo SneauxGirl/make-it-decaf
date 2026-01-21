@@ -163,6 +163,13 @@ body {
         margin: 10px 0;
     }
 
+    .header__nav.active, .header__auth.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
     .mobile-menu-icon {
         display: none;
     }
