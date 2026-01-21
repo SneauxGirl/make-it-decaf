@@ -51,13 +51,25 @@ body {
     display: none;
 }
 
-.header__nav.active {
+/* Mobile active state - centered column */
+@media (max-width: 1039px) {
+    .header__nav.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0;
+        gap: 1.5rem;
+    }
+}
+
+/* .header__nav.active {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 20px 0;
     gap: 2rem;
-}
+} */
 
 .header__link {
     color: #8a8a8a;
@@ -114,10 +126,10 @@ body {
 }
 
 .header__button--sign-in {
-    background-color: #00532a; /*adjusted to complement theme and gihub button */
+    background-color: #00532a; /* adjusted to complement theme and gihub button */
 }
 
-/*MOBILE MENU - finish styling */
+/* MOBILE MENU - finish styling */
 .mobile-menu-icon {
     display: block;
     cursor: pointer;
@@ -137,44 +149,44 @@ body {
     }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1040px) {
     .header__inner {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         flex-direction: row;
         text-align: center;
         justify-content: space-between;
         padding: 0 20px;
     }
 
+    .header__nav {
+        display: flex;
+        justify-content: row; /* swapped from space between */
+        gap: 2rem;
+    }
     .header__auth {
         display: flex;
-        flex-wrap: wrap;
-        /*flex-direction: row; - commented out in guide code with no notes, seems redundant*/
+        padding: 20px 0; /* added */
+        /* flex-wrap: wrap; - commented out to try to fix responsiveness issues for active over 1040px */
+        /* flex-direction: row; - commented out in guide code with no notes, seems redundant */
     }
 
     .header__title {
         margin: 10px 0;
     }
 
-    .header__nav {
-        display: flex;
-        justify-content: space-between;
-        gap: 2rem;
-    }
-
-    .header__nav.active, .header__auth.active {
+    /* .header__nav.active, .header__auth.active {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
-    }
+    } */
 
     .mobile-menu-icon {
         display: none;
     }
 }
 
-/* TODO - resolve why right padding isn't working on buttons from header-inner* */
+/* TODO - resolve why right padding isn't working on buttons from header-inner */
 @media (min-width: 1030px) and (max-width: 1220px) {
     .header__auth {
         padding-right: 20px;
