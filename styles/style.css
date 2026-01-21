@@ -113,9 +113,10 @@ body {
 }
 
 .header__button--sign-in {
-    background-color: #00532a; /*adjusted to complement theme and gihub button*/
+    background-color: #00532a; /*adjusted to complement theme and gihub button */
 }
 
+/*MOBILE MENU - finish styling */
 .mobile-menu-icon {
     display: block;
     cursor: pointer;
@@ -123,8 +124,8 @@ body {
     margin-right: 20px;
     color: #fff;
 }
-/*TODO set final styling - top isn't showing but pushing it down affects the entire page*/
-.container {
+/*CONTAINER*/
+.hero {
     position: relative;
     top: 5rem;
     text-align: center;
@@ -135,31 +136,30 @@ body {
     z-index: 1;
 }
 
-.container:before {
+.hero:before {
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    /*background: linear-gradient(180deg, #000000, #181818);*/
     z-index: -1;
 }
 
-.container__title {
+.hero__title {
     font-size: 55px;
-    margin: 20px 5%;
+    margin: 20px 5%; /* side margin added for cleaner mobile view */
     color: #ffffff;
 }
 
-.container__description {
+.hero__description {
     font-size: 18px;
     font-family: "Geist Sans", sans-serif;
     color: #bbb;
-    margin: 20px 5%;
+    margin: 20px 5%; /* side margin added for cleaner mobile view */
 }
 
-.container__buttons {
+.hero__buttons { /* at bottom in original - batched here for easier reference. No following style conflict. */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,7 +167,7 @@ body {
     width: auto;
 }
 
-.container__button {
+.hero__button {
     margin: 10px;
     padding: 10px 20px;
     background-color: #ffffff;
@@ -179,7 +179,7 @@ body {
     color: #222;
 }
 
-.container__button:hover {
+.hero__button:hover {
     background-color: #262626;
     border: 1px solid #d7d7d7;
     color: #fff;
@@ -187,14 +187,14 @@ body {
 }
 
 /* View Docs Button */
-.container__button.container__button--view-docs {
+.hero__button.hero__button--view-docs {
     background: transparent;
     color: white;
     border: 1px solid transparent;
 }
 
-button.container__button--view-docs::before,
-button.container__button--view-docs::after {
+button.hero__button--view-docs::before,
+button.hero__button--view-docs::after {
     content: "";
     width: 0;
     height: 2px;
@@ -203,8 +203,8 @@ button.container__button--view-docs::after {
     background: #3f3f3f;
 }
 
-button.container__button--view-docs span::before,
-button.container__button--view-docs span::after {
+button.hero__button--view-docs span::before,
+button.hero__button--view-docs span::after {
     content: "";
     width: 2px;
     height: 0;
@@ -213,41 +213,41 @@ button.container__button--view-docs span::after {
     background: #a4a4a4;
 }
 
-button.container__button--view-docs:hover::before,
-button.container__button--view-docs:hover::after {
+button.hero__button--view-docs:hover::before,
+button.hero__button--view-docs:hover::after {
     width: 100%;
 }
 
-button.container__button--view-docs:hover span::before,
-button.container__button--view-docs:hover span::after {
+button.hero__button--view-docs:hover span::before,
+button.hero__button--view-docs:hover span::after {
     height: 100%;
 }
 
-button.container__button--view-docs::after {
+button.hero__button--view-docs::after {
     right: 0;
     bottom: 0;
     transition-duration: 0.4s;
 }
 
-button.container__button--view-docs span::after {
+button.hero__button--view-docs span::after {
     right: 0;
     bottom: 0;
     transition-duration: 0.4s;
 }
 
-button.container__button--view-docs::before {
+button.hero__button--view-docs::before {
     left: 0;
     top: 0;
     transition-duration: 0.4s;
 }
 
-button.container__button--view-docs span::before {
+button.hero__button--view-docs span::before {
     left: 0;
     top: 0;
     transition-duration: 0.4s;
 }
 
-button.container__button--view-docs {
+button.hero__button--view-docs {
     display: flex;
     align-items: center;
     position: relative;
