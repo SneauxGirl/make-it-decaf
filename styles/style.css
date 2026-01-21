@@ -720,7 +720,7 @@ pre[class*="language-"]::selection {
         opacity: 0;
     }
     10% {
-        opacity: 0.75%;
+        opacity: 0.75;
     }
     100% {
         transform: translateY(110vh);
