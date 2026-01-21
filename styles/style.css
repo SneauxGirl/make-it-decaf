@@ -148,7 +148,7 @@ body {
 
 .container__title {
     font-size: 55px;
-    margin: 20px 0;
+    margin: 20px 5%;
     color: #ffffff;
 }
 
@@ -156,7 +156,7 @@ body {
     font-size: 18px;
     font-family: "Geist Sans", sans-serif;
     color: #bbb;
-    margin: 20px 0;
+    margin: 20px 5%;
 }
 
 .container__buttons {
@@ -269,7 +269,7 @@ button.container__button--view-docs {
     padding: 25px 0 0 0;
     width: 100%   ;
     max-width: 375px;
-    margin: 120px auto 0 auto;
+    margin: 120px auto 0 auto; /*leave this tight for max code space on mobile*/
 }
 
 @media (min-width: 500px) {
@@ -537,14 +537,15 @@ pre[class*="language-"]::selection {
     cursor: pointer;
 }
 
-/*OPEN SOURCE SECITON  TODO: margins and positioning don't match visuals - recheck code if that doesn't resolve during tutorials*/
-
 .open-source-section {
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px 0;
     width: 100%;
     margin: 0 auto;
     z-index: 1;
+}
+.open-source-text {
+    padding: 0 5%; /*solves right text wrap issues at mobile*/
 }
 
 .section-subtitle {
@@ -602,7 +603,7 @@ pre[class*="language-"]::selection {
 .gitPulse__bg {
     top: -200px;
     left: 0;
-    margin: 140px 0 70px 0;
+    margin: 140px 0 70px 20px;
     opacity: 0.15;
     background-image: url("../images/circuits.jpg");
     background-size: cover;
