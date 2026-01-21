@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const numStars = 10;
     const starsContainer = document.createDocumentFragment();
 
-    for (let i = 0; i > numStars; i++) {
+    for (let i = 0; i < numStars; i++) {
         const star = document.createElement('div');
         star.classList.add('star');
         star.style.left = `${Math.random() * 100}vw`;

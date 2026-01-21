@@ -449,13 +449,6 @@ pre[class*="language-"].line-numbers > code {
     text-align: right;
 }
 
-@media (min-width: 500px) {
-    .code-container-bg-blur {
-    width: 110vw;
-
-    }
-}
-
 /* TODO - revisit. bkg lightened using custom hex tool. recheck before final, */
 code[class*="language-"],
 pre[class*="language-"] {
@@ -477,6 +470,13 @@ pre[class*="language-"] {
     z-index: -2;
 }
 
+@media (min-width: 500px) {
+    .code-container-bg-blur {
+    width: 110vw;
+
+    }
+}
+
 /* Active line */
 pre[class*="language-"] {
   box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
@@ -484,7 +484,7 @@ pre[class*="language-"] {
 
 pre[class*="language-"] {
   color: #FFFFFF;  /* Pure white - main text */
-  background: #0d0b09;  /* Very dark - almost black */
+  background: #0d0b09 !important;  /* Very dark - almost black */
   text-shadow: none;
   font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
 }
@@ -492,86 +492,86 @@ pre[class*="language-"] {
 /* Selection */
 code[class*="language-"]::-moz-selection,
 pre[class*="language-"]::-moz-selection {
-  background: #3D3831;  /* Dark brown selection */
+  background: #3D3831 !important;  /* Dark brown selection */
 }
 
 code[class*="language-"]::selection,
 pre[class*="language-"]::selection {
-  background: #3D3831;
+  background: #3D3831 !important;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #A0B3C5;  /* Cool blue-gray from LiyuDev background */
+  color: #A0B3C5 !important;  /* Cool blue-gray from LiyuDev background */
   font-style: italic;
 }
 
 .token.string,
 .token.attr-value {
-  color: #00D4A8;  /* Bright green - same tone, brightness as prior teal */
+  color: #00D4A8 !important;  /* Bright green - same tone, brightness as prior teal */
 }
 
 .token.keyword {
-  color: #D946EF;  /* Bright magenta - drawn from icon color */
+  color: #D946EF !important;  /* Bright magenta - drawn from icon color */
 }
 
 .token.operator {
-  color: #46D9EF;  /* Bright cyan - swapped with magenta, matched to magenta tone, brightness */
+  color: #46D9EF !important;  /* Bright cyan - swapped with magenta, matched to magenta tone, brightness */
 }
 
 .token.function {
-  color: #FFB347;  /* Warm tangerine - complements gold from LiyuDev site */
+  color: #FFB347 !important;  /* Warm tangerine - complements gold from LiyuDev site */
   font-style: italic;
 }
 
 .token.number {
-  color: #5FC3E4;  /* Sky blue - lighter than LiyuDev site teal */
+  color: #5FC3E4 !important;  /* Sky blue - lighter than LiyuDev site teal */
 }
 
 .token.boolean,
 .token.null,
 .token.atom {
-  color: #A855F7;  /* Bright purple - derived from LiyuDev icon */
+  color: #A855F7 !important;  /* Bright purple - derived from LiyuDev icon */
 }
 
 .token.variable {
-  color: #4DD4AC;  /* Mint teal - vibrant green-blue, contrast color*/
+  color: #4DD4AC !important;  /* Mint teal - vibrant green-blue, contrast color*/
 }
 
 .token.property {
-  color: #E8F4F8;  /* Very light blue - from LiyuDev bg */
+  color: #E8F4F8 !important;  /* Very light blue - from LiyuDev bg */
 }
 
 .token.class-name {
-  color: #FFFFFF;  /* Pure white - stands out*/
+  color: #FFFFFF !important;  /* Pure white - stands out*/
 }
 
 .token.punctuation {
-  color: #B8C5D0;  /* Cool gray - subtle */
+  color: #B8C5D0 !important;  /* Cool gray - subtle */
 }
 
 .token.tag {
-  color: #00D4A8;  /* Bright green - same tone, brightness as prior teal; separated by type for future clarity*/
+  color: #00D4A8 !important;  /* Bright green - same tone, brightness as prior teal; separated by type for future clarity*/
 }
 
 .token.attr-name {
-  color: #D946EF;  /* Bright magenta */
+  color: #D946EF !important;  /* Bright magenta */
 }
 
 .token.builtin,
 .token.selector {
-  color: #F4C430;  /* Bright gold - warm accent */
+  color: #F4C430 !important;  /* Bright gold - warm accent */
 }
 
 .token.regex,
 .token.important {
-  color: #E879F9;  /* Hot pink-magenta - attention color */
+  color: #E879F9 !important;  /* Hot pink-magenta - attention color */
 }
 
 .token.namespace {
-  opacity: 0.7;
+  opacity: 0.7 !important;
 }
 
 .copy-icon {
