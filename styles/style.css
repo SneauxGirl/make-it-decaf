@@ -6,18 +6,19 @@ html {
 
 body {
   font-family: 'Geist Sans', sans-serif;
-  background: black; /*updated to true black for stronger site visuals*/
+  background: black;
   color: #ffffff;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   overflow-x: hidden;
 }
 
+/* HEADER */
 .header {
     width: 100%;
     padding: 2px 0;
@@ -29,24 +30,6 @@ body {
     top: 0;
     left: 0;
     z-index: 2;
-}
-
-.header__inner {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px 0;
-    margin: 0 auto;
-    transition: all 0.2s linear;
-}   
-
-.header__inner-left {
-    display: flex;
-    align-items: center;
 }
 
 .header__title { 
@@ -64,15 +47,15 @@ body {
 }
 
 .header__nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    display: none;
 }
 
 .header__nav.active {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     padding: 20px 0;
+    gap: 2rem;
 }
 
 .header__link {
@@ -105,6 +88,24 @@ body {
     margin-left: 10px;
 }
 
+.header__inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 0;
+    margin: 0 auto;
+    transition: all 0.2s linear;
+}   
+
+.header__inner-left {
+    display: flex;
+    align-items: center;
+}
+
 .header__button:hover {
     background-color: #262626;
     color: #fff;
@@ -132,6 +133,17 @@ body {
     margin: 90px 0;
     padding-bottom: 20px;
     z-index: 1;
+}
+
+.container:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /*background: linear-gradient(180deg, #000000, #181818);*/
+    z-index: -1;
 }
 
 .container__title {
@@ -249,7 +261,7 @@ button.container__button--view-docs {
     font-family: "Geist Sans", sans-serif;
 }
 
-/* Code Container */
+/* CODE CONTAINER - TODO - code alignment consistency*/
 .code-container {
     background: radial-gradient(#444444, #000000);
     border: 1px solid #282828;
@@ -390,7 +402,7 @@ pre[class*="language-"].line-numbers > code {
         padding: 10px;
     }
 }
-/* TODO - revisit. bkg lightened using custom hex tool. recheck before final*/
+/* TODO - revisit. bkg lightened using custom hex tool. recheck before final, */
 code[class*="language-"],
 pre[class*="language-"] {
   color: #FDFAF4;  /* Light cream - main text */
