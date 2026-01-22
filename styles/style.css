@@ -637,7 +637,7 @@ pre[class*="language-"]::selection {
 .gitPulse img{
     width: 100%;
     max-width: 600px;
-    border-radius: 29px; /*rounded the corners to match the border within the graphic*/
+    border-radius: 29px; /* rounded the corners to match the border within the graphic */
 }
 
 /* GITPULSE BACKGROUND */
