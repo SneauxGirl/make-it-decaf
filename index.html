@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>       <!-- Language Components -->
+    <!-- LANGUAGE COMPONENTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-rust.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-go.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-elixir.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
-    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">     <!--favicon, bumps my script up by one line compared to original-->
     <title>Make It Decaf</title>
 </head>
 <body>
@@ -41,15 +42,15 @@
                 <button class="header__button header__button--sign-in">Sign In</button>
             </div>
         </div>
-    </header> <!--confirmed correct line items-->
+    </header>
     <section class="hero">
         <h2 class="hero__title">Any language, any framework, always secure</h2>
         <p class="hero__description">Integrate authentication into your APIs effortlessly with just a few lines of code. WE offer SDKs for various languages and frameworks, alongside an intuitive REST API with a public OpenAPI specification</p>
         <div class="hero__buttons">
             <button class="hero__button hero__button--get-started">Get Started</button>
             <button class="hero__button hero__button--view-docs"><span>Visit the docs </span><i class="fas fa-arrow-right"></i></button>
-        </div> <!--div confirmed-->
-        <div class="code-container-bg-blur"></div> <!--div confirmed-->
+        </div>
+        <div class="code-container-bg-blur"></div>
         <div class="code-container">
             <div class="code-container__tabs">
                 <button class="code-container__tab code-container__tab--active" data-language="typescript">
@@ -80,11 +81,11 @@
                     <i class="fab fa-java code-container__icon"></i>
                     Java
                 </button>
-            </div> <!--div confirmed-->
+            </div>
             <div class="code-container__content">
                 <div class="copy-icon" onClick="copyCode()" role="button" tabindex="0" aria-label="Copy code to clipboard" title="Copy code to clipboard">
                     <i class="fas fa-copy"></i>
-                </div> <!--div length confirmed-->
+                </div>
                 <pre class="code-container__code code-container__code--typescript code-container__code--active line-numbers"><code class="language-typescript">import { vertifyKey } from @codeswitch/api'
 
 const { result, error } = await verifyKey({
@@ -101,7 +102,7 @@ if (!result.valid) {
 }
 
 // handle request
-                    </code></pre>    <!--pre length confirmed--> 
+                    </code></pre>
                 <pre class="code-container__code code-container__code--python line-numbers"><code class="language-python">import asyncio
 import os
 import codeswitch
@@ -117,7 +118,7 @@ async def main() -> None:
     } else {
         print(result.unwrap_err());
     }
-                    </code></pre>    <!--pre length confirmed--> 
+                    </code></pre>
                 <pre class="code-container__code code-container__code--rust line-numbers"><code class="language-rust">use codeswitch::models::{VerifyKeyRequest, Wrapped};
 use codeswitch::Client;
 
@@ -131,7 +132,7 @@ async fn verify_key() {
         Wrapped::Err(err) => eprintln!("{{err:?}}"),
     }
 }
-                    </code></pre>   <!--pre length confirmed--> 
+                    </code></pre>
                 <pre class="code-container__code code-container__code--golang line-numbers"><code class="language-go">package main
 
 import (
@@ -153,7 +154,7 @@ func main() {
         fmt.Println("Key is invalid");
     }
 }
-                    </code></pre>   <!--pre length confirmed--> 
+                    </code></pre>
                 <pre class="code-container__code code-container__code--curl line-numbers"><code class="language-bash">curl --request POST \
 --url https://api.codeswitch.dev/v1/keys.verifyKey \
 --header 'Content-Type: application/json' \
@@ -161,7 +162,7 @@ func main() {
     "apiId": "api_1234",
     "key": "sk_1234",
 }'
-                    </code></pre>   <!--pre length confirmed--> 
+                    </code></pre>
                 <pre class="code-container__code code-container__code--elixir line-numbers"><code class="language-elixir">CodeswitchElixirSdk.verify_key("xyz_AS5HDbkXXPot2MMoPHD8jnL")
 
 # returns
@@ -172,7 +173,7 @@ func main() {
         "hello" => "world"
     }
 }
-                    </code></pre>   <!--pre length confirmed--> 
+                    </code></pre>
                 <pre class="code-container__code code-container__code--java line-numbers"><code class="language-java">package com.example.myapp;
 import com.codeswitch.codeswitchsdk.dto.KeyVerifyRequest;
 import com.codeswitch.codeswitchsdk.dto.KeyVerifyResponse;
@@ -189,10 +190,10 @@ public class APIController {
         return keyService.verifyKey(keyVerifyRequest);
     }
 }
-                    </code></pre>   <!--pre length confirmed--> 
-            </div>  <!--div length confirmed--> 
-        </div>  <!--div length confirmed-->
-    </section>  <!--section length confirmed-->
+                    </code></pre>
+            </div>
+        </div>
+    </section>
     <section class="open-source-section">
         <div class="open-source-text">
             <h3 class="section-subtitle">oss/acc</h3>

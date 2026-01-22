@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    //Code Switcher animation
+    //CODE SWITCHER ANIMATION
     const tabs = document.querySelectorAll(".code-container__tab");
     const codeBlocks = document.querySelectorAll(".code-container__code");
 
@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", function() {
             this.classList.add("code-container__tab--active");
             document.querySelector(`.code-container__code--${language}`).classList.add("code-container__code--active");
 
-            //Re-highlight the code block for Theme - make sure this is compatible with my edits
+            //Uses Prism - remember this with theme edits
             Prism.highlightElement(document.querySelector(`.code-container__code--${language} code`));
         });
     });
 
-    //Footer animation
+    //FOOTER ANIMATION
     const footer = document.querySelector('.footer__inner');
     const footerSpans = footer.querySelectorAll('span');
     const observer = new IntersectionObserver(entries => {

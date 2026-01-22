@@ -117,7 +117,7 @@ body {
 }
 
 .header__button--sign-in {
-    background-color: #035600; /* back to the original */
+    background-color: #035600;
 }
 
 /* MOBILE MENU */
@@ -204,7 +204,7 @@ body {
 
 .hero__title {
     font-size: 55px;
-    margin: 20px 5%; /* side margin added for cleaner mobile view */
+    margin: 20px 5%;
     color: #ffffff;
 }
 
@@ -212,10 +212,10 @@ body {
     font-size: 18px;
     font-family: "Geist Sans", sans-serif;
     color: #bbb;
-    margin: 20px 5%; /* side margin added for cleaner mobile view */
+    margin: 20px 5%;
 }
 
-.hero__buttons { /* at bottom in original - batched here for easier reference. No following style conflict. */
+.hero__buttons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -586,7 +586,7 @@ pre[class*="language-"]::selection {
     z-index: 1;
 }
 .open-source-text {
-    padding: 0 5%; /*solves right text wrap issues at mobile*/
+    padding: 0 5%;
 }
 
 .section-subtitle {
