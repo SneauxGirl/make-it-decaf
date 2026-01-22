@@ -4,7 +4,6 @@ html {
     width: 100%;
 }
 
-
 body {
     font-family: 'Geist Sans', sans-serif;
     background: black;
@@ -118,7 +117,7 @@ body {
 }
 
 .header__button--sign-in {
-    background-color: #00532a; /* adjusted to complement theme and gihub button */
+    background-color: #035600; /* back to the original */
 }
 
 /* MOBILE MENU */
@@ -323,9 +322,8 @@ button.hero__button--view-docs span {
     padding: 2px 10px;
 }
 
-/* CODE CONTAINER - TODO - code alignment consistency*/
 .code-container {
-    background: radial-gradient(#444444, #000000);
+    background: radial-gradient(#444444, );
     border: 1px solid #282828;
     border-radius: 10px;
     padding: 25px 0 0 0;
@@ -449,10 +447,10 @@ pre[class*="language-"].line-numbers > code {
     text-align: right;
 }
 
+/* THEME OVERRIDE - LIYU DEV */
 code[class*="language-"],
 pre[class*="language-"] {
   color: #FDFAF4;  /* Light cream - main text */
-  background: #201C18;  /*#1a1612 Very dark brown - darker than #3D3831*/
   text-shadow: none;
   font-family: 'Inconsolata', 'Monaco', 'Menlo', monospace;
   letter-spacing: 0.3px;
@@ -474,92 +472,6 @@ pre[class*="language-"] {
     width: 110vw;
 
     }
-}
-
-/* CODE THEME COLOR OVERRIDE - LIYUDEV BOLD */
-/* Selection */
-code[class*="language-"]::-moz-selection,
-pre[class*="language-"]::-moz-selection {
-  background: #3D3831 !important;  /* Dark brown selection */
-}
-
-code[class*="language-"]::selection,
-pre[class*="language-"]::selection {
-  background: #3D3831 !important;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #A0B3C5 !important;  /* Cool blue-gray from LiyuDev background */
-  font-style: italic;
-}
-
-.token.string,
-.token.attr-value {
-  color: #00D4A8 !important;  /* Bright green - same tone, brightness as prior teal */
-}
-
-.token.keyword {
-  color: #D946EF !important;  /* Bright magenta - drawn from icon color */
-}
-
-.token.operator {
-  color: #46D9EF !important;  /* Bright cyan - swapped with magenta, matched to magenta tone, brightness */
-}
-
-.token.function {
-  color: #FFB347 !important;  /* Warm tangerine - complements gold from LiyuDev site */
-  font-style: italic;
-}
-
-.token.number {
-  color: #5FC3E4 !important;  /* Sky blue - lighter than LiyuDev site teal */
-}
-
-.token.boolean,
-.token.null,
-.token.atom {
-  color: #A855F7 !important;  /* Bright purple - derived from LiyuDev icon */
-}
-
-.token.variable {
-  color: #4DD4AC !important;  /* Mint teal - vibrant green-blue, contrast color*/
-}
-
-.token.property {
-  color: #E8F4F8 !important;  /* Very light blue - from LiyuDev bg */
-}
-
-.token.class-name {
-  color: #FFFFFF !important;  /* Pure white - stands out*/
-}
-
-.token.punctuation {
-  color: #B8C5D0 !important;  /* Cool gray - subtle */
-}
-
-.token.tag {
-  color: #00D4A8 !important;  /* Bright green - same tone, brightness as prior teal; separated by type for future clarity*/
-}
-
-.token.attr-name {
-  color: #D946EF !important;  /* Bright magenta */
-}
-
-.token.builtin,
-.token.selector {
-  color: #F4C430 !important;  /* Bright gold - warm accent */
-}
-
-.token.regex,
-.token.important {
-  color: #E879F9 !important;  /* Hot pink-magenta - attention color */
-}
-
-.token.namespace {
-  opacity: 0.7 !important;
 }
 
 /* THEME COLOR OVERRIDE - CLAUDE AI */
@@ -664,6 +576,7 @@ pre[class*="language-"]::selection {
     color: #828282;
     cursor: pointer;
 }
+
 /* OPEN SOURCE SECTION */
 .open-source-section {
     text-align: center;
