@@ -323,7 +323,7 @@ button.hero__button--view-docs span {
 }
 
 .code-container {
-    background: radial-gradient(#444444, );
+    background: radial-gradient(#444444, #000000);
     border: 1px solid #282828;
     border-radius: 10px;
     padding: 25px 0 0 0;
@@ -450,11 +450,11 @@ pre[class*="language-"].line-numbers > code {
 /* THEME OVERRIDE - LIYU DEV */
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #FDFAF4;  /* Light cream - main text */
-  text-shadow: none;
-  font-family: 'Inconsolata', 'Monaco', 'Menlo', monospace;
-  letter-spacing: 0.3px;
-  word-spacing: 1px;
+    color: #FDFAF4;  /* Light cream - main text */
+    text-shadow: none;
+    font-family: 'Inconsolata', 'Monaco', 'Menlo', monospace;
+    letter-spacing: 0.3px;
+    word-spacing: 1px;
 }
 
 .code-container-bg-blur {
@@ -478,86 +478,86 @@ pre[class*="language-"] {
 /* Selection */
 code[class*="language-"]::-moz-selection,
 pre[class*="language-"]::-moz-selection {
-  background: #264F78 !important;  /* Dark blue selection */
+    background: #264F78 !important;  /* Dark blue selection */
 }
 
 code[class*="language-"]::selection,
 pre[class*="language-"]::selection {
-  background: #264F78 !important;
+    background: #264F78 !important;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #6A9955 !important;  /* Muted green */
-  font-style: italic;
+    color: #6A9955 !important;  /* Muted green */
+    font-style: italic;
 }
 
 .token.string,
 .token.attr-value {
-  color: #CE9178 !important;  /* Peachy orange */
+    color: #CE9178 !important;  /* Peachy orange */
 }
 
 .token.keyword {
-  color: #C586C0 !important;  /* Soft purple/magenta */
+    color: #C586C0 !important;  /* Soft purple/magenta */
 }
 
 .token.operator {
-  color: #D4D4D4 !important;  /* Light gray - same as main text */
+    color: #D4D4D4 !important;  /* Light gray - same as main text */
 }
 
 .token.function {
-  color: #DCDCAA !important;  /* Pale yellow */
-  font-style: normal;
+    color: #DCDCAA !important;  /* Pale yellow */
+    font-style: normal;
 }
 
 .token.number {
-  color: #B5CEA8 !important;  /* Light mint green */
+    color: #B5CEA8 !important;  /* Light mint green */
 }
 
 .token.boolean,
 .token.null,
 .token.atom {
-  color: #569CD6 !important;  /* Sky blue */
+    color: #569CD6 !important;  /* Sky blue */
 }
 
 .token.variable {
-  color: #9CDCFE !important;  /* Bright cyan */
+    color: #9CDCFE !important;  /* Bright cyan */
 }
 
 .token.property {
-  color: #9CDCFE !important;  /* Bright cyan */
+    color: #9CDCFE !important;  /* Bright cyan */
 }
 
 .token.class-name {
-  color: #4EC9B0 !important;  /* Teal/turquoise */
+    color: #4EC9B0 !important;  /* Teal/turquoise */
 }
 
 .token.punctuation {
-  color: #D4D4D4 !important;  /* Light gray */
+    color: #D4D4D4 !important;  /* Light gray */
 }
 
 .token.tag {
-  color: #569CD6 !important;  /* Sky blue */
+    color: #569CD6 !important;  /* Sky blue */
 }
 
 .token.attr-name {
-  color: #9CDCFE !important;  /* Bright cyan */
+    color: #9CDCFE !important;  /* Bright cyan */
 }
 
 .token.builtin,
 .token.selector {
-  color: #4EC9B0 !important;  /* Teal/turquoise */
+    color: #4EC9B0 !important;  /* Teal/turquoise */
 }
 
 .token.regex,
 .token.important {
-  color: #D16969 !important;  /* Salmon red */
+    color: #D16969 !important;  /* Salmon red */
 }
 
 .token.namespace {
-  opacity: 0.7 !important;
+    opacity: 0.7 !important;
 }
 
 .copy-icon {
@@ -645,7 +645,7 @@ pre[class*="language-"]::selection {
     top: -200px;
     left: 0;
     margin: 140px 0 70px 20px;
-    opacity: 0.15;
+    opacity: 0.2;
     background-image: url("../images/circuits.jpg");
     background-size: cover;
     background-position: center;
