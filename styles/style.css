@@ -11,17 +11,25 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.body__container {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     flex-direction: column;
     overflow-x: hidden;
+    width: 100vw;
 }
 
 /* HEADER */
 .header {
     width: 100%;
     padding: 2px 0;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #323232;
