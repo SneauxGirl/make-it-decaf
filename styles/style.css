@@ -11,13 +11,13 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    align-content: center;
     align-items: center;
 }
 
 .body__container {
     display: flex;
     justify-content: center;
+    align-content: center;
     align-items: center;
     height: 100%;
     flex-direction: column;
